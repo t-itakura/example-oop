@@ -21,3 +21,11 @@ Factory: 工場
 Factoryクラスが持つコンポーネント: 生地, ソース
 各工場は各生地、ソースクラスを持つhas-aの関係
 ```
+
+
+## 参考
+### Abstract Factory
+[Python命名規則一覧](https://qiita.com/naomi7325/items/4eb1d2a40277361e898b)
+[Factory Methodパターン](https://pydp.info/GoF_dp/creation/03_Factory_Method/index.html)
+[沈思黙考：デザインパターン(Abstract Factory パターン)](https://qiita.com/morimotof/items/67a9e2a8d7e15ea321d2)
+
