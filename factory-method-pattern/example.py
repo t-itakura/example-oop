@@ -1,46 +1,42 @@
 import abc
 
 def main():
+    # 牛
     cow_factory = CowFactory()
-    cow_factory.factory_method()
-    cow.check_animal()
-
-    chiken = ChichenFactory()
-    chiken.check_animal()
+    cow_factory.create_animal().call()
+    # 豚
+    pig_factory = PigFactory()
+    pig_factory.create_animal().call()
+    # 鶏
+    chicken_factory = ChickenFactory()
+    chicken_factory.create_animal().call()
 
 # 抽象クラスCreater
 class Factory:
-    def __init__(self):
-        # 動物の種類はここで決定
-        self.animal = self.factory_method()
+    def create(self, kind):
+        # 動物を決める
+        animal = create_animal()
+        return animal
     
-    def create(self, breed):
-        # 動物(品種)を決める
-        self.animal = create_breed(breed)
-
-        return self.animal
-    
-    @abc.abstractmethod
-    def factory_method(self):
-        pass
-
     @abc.abstractclassmethod
-    def create_breed(self, breed):
+    def create_animal(self):
         pass
 
-# Creater
+# Createrの具象クラス
 class CowFactory(Factory):
-    def factory_method(self):
+    def create_animal(self):
         return Cow()
-    
-    def 
 
+class PigFactory(Factory):
+    def create_animal(self):
+        return Pig()
+
+class ChickenFactory(Factory):
+    def create_animal(self):
+        return Chicken()
 
 # Product
 class Animal:
-    def __init__(self, breed):
-        self.breed = breed
-
     @abc.abstractclassmethod
     def call(self):
         pass
@@ -49,3 +45,13 @@ class Cow(Animal):
     def call(self):
         print("mow")
 
+class Pig(Animal):
+    def call(self):
+        print("boo")
+
+class Chicken(Animal):
+    def call(self):
+        print("coak")
+
+if __name__ == "__main__":
+    main()

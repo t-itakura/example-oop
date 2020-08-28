@@ -32,12 +32,12 @@ FactoryごとにどのProductを生成するかオブジェクト作成時に作
 
 ***例題***
 動物の鳴き声をチェック
-- 牛,もしくは鶏を作る工場
+- 牛,もしくは豚、鶏を作る工場
 - 動物を作ったら鳴き声でどの動物かチェックする
 
 ```
 Creater(Factory): 工場
-Product: 牛(小さい牛、赤い牛、青い牛)、鶏(烏骨鶏、軍鶏、白い鶏)
+Product: 牛、豚、鶏
 ```
 
 
@@ -45,3 +45,4 @@ Product: 牛(小さい牛、赤い牛、青い牛)、鶏(烏骨鶏、軍鶏、�
 [Python命名規則一覧](https://qiita.com/naomi7325/items/4eb1d2a40277361e898b)  
 [Factory Methodパターン](https://pydp.info/GoF_dp/creation/03_Factory_Method/index.html)  
 [沈思黙考：デザインパターン(Abstract Factory パターン)](https://qiita.com/morimotof/items/67a9e2a8d7e15ea321d2)  
+[Factory Method パターン](http://www.ie.u-ryukyu.ac.jp/~e085739/java.it.1.html)  
